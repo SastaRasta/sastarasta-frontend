@@ -8,5 +8,13 @@ function onClick()
 
 }
 
+function onsubmit()
+{
+    
+}
+
+let submit = document.getElementById("submit")
+submit.addEventListener("click", onsubmit);
+
 let login = document.getElementById("login");
 login.addEventListener("click",onClick);
