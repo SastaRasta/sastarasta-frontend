@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./index.js" defer></script>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./output.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 				</h1>
 				<p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
 				<div class="flex justify-center">
-					<button class="inline-flex text-white bg-[#276461] border-0 py-2 px-6 focus:outline-none hover:bg-[#9BB8A5] rounded text-lg">Login</button>
+					<button id="login"  class="inline-flex text-white bg-[#276461] border-0 py-2 px-6 focus:outline-none hover:bg-[#9BB8A5] rounded text-lg">Login</button>
 				</div>
 			</div>
 			<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -23,6 +24,8 @@
 			</div>
 		</div>
 	</section>
+
+
 
 <form class="max-w-4xl mx-auto">
 	<div class="grid md:grid-cols-2 md:gap-6">
@@ -46,7 +49,7 @@
     </div>
   </div>
   <div class="relative z-0 w-full mb-5 group">
-      <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+      <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
       <label for="budget" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Budget</label>
   </div>
   <div class="relative z-0 w-full mb-5 group">
