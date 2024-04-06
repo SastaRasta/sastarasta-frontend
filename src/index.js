@@ -39,10 +39,10 @@ tripSuggestionForm.addEventListener("submit", (e) => {
             return res.json();
         } else if (res.status === 401) {
             alert("You are not authorized to perform this action. Please login.")
-        }
+        } 
     })
     .then(data => {
-        document.getElementById('test_res').innerHTML = data
+        document.getElementById('test_res').innerText = data.response;
     })
 
 });
