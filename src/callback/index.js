@@ -33,4 +33,4 @@ const accessCode = params.get("access_token")
 setCookie("access_token", accessCode, 1)
 
 console.log(window.location.origin)
-window.location.href = `${window.location.origin}/src/`
+window.location.href = `${window.location.origin}/`

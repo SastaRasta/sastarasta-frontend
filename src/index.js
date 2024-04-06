@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:5000"
+const remoteURL = "https://authrexapi.bharathshanmugam.dev"
 
 function getCookie(name) {
     var nameEQ = name + "=";
