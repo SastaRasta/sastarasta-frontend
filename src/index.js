@@ -23,6 +23,8 @@ login.addEventListener("click", (e) => {
 const tripSuggestionForm = document.getElementById("trip_suggestion");
 tripSuggestionForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    const spinner = document.getElementById("spinner");
+    spinner.style.display = "flex";
     const formData = new FormData(tripSuggestionForm);
     const data = Object.fromEntries(formData);
     
@@ -44,6 +46,7 @@ tripSuggestionForm.addEventListener("submit", (e) => {
     .then(data => {
         console.log(data)
         document.getElementById('ifr').srcdoc = data;
+        spinner.style.display = "none";
     })
 
 });
