@@ -8,13 +8,10 @@ function onClick()
 
 }
 
-function onsubmit()
-{
-    
-}
-
-let submit = document.getElementById("submit")
-submit.addEventListener("click", onsubmit);
-
-let login = document.getElementById("login");
-login.addEventListener("click",onClick);
+const tripSuggestionForm = document.getElementById("trip_suggestion");
+tripSuggestionForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(tripSuggestionForm);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+});

@@ -25,59 +25,62 @@
 		</div>
 	</section>
 
-
-
-<form class="max-w-4xl mx-auto">
-	<div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="current_location" id="current_location" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="current_location" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Current Location</label>
+    <form class="max-w-4xl mx-auto" action="" id="trip_suggestion">
+        <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="start_location" id="start_location" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+            <label for="start_location" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Start Location</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="destination" id="destination" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+            <label for="destination" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Destination</label>
+        </div>
+    </div>
+    <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="date" name="from_date" id="from_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+            <label for="from_date" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">From Date</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="date" name="to_date" id="to_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+            <label for="to_date" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">To Date</label>
+        </div>
     </div>
     <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="destination" id="destination" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="destination" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Destination</label>
-    </div>
-  </div>
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="date" name="from_date" id="from_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="from_date" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">From Date</label>
+        <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="budget" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Budget</label>
     </div>
     <div class="relative z-0 w-full mb-5 group">
-        <input type="date" name="to_date" id="to_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="to_date" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">To Date</label>
+        <input type="number" name="group_size" id="group_size" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="group_size" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Group Size</label>
     </div>
-  </div>
-  <div class="relative z-0 w-full mb-5 group">
-      <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-      <label for="budget" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Budget</label>
-  </div>
-  <div class="relative z-0 w-full mb-5 group">
-      <input type="number" name="group_size" id="group_size" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-      <label for="group_size" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Group Size</label>
-  </div>
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-      <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-      <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+    <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mode Of Arrival</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mode Of Transport</label>
+        </div>
     </div>
     <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-    </div>
-  </div>
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+        <input type="text" name="accomodation" id="accomodation" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="accomodation" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Accomodation</label>
     </div>
     <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
-        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+        <input type="text" name="objective" id="objective" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="objective" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Objective</label>
     </div>
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#276461] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
-
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="food_preference" id="food_preference" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="food_preference" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Food Preference</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="extra_info" id="extra_info" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-[#276461] focus:outline-none focus:ring-0 focus:border-[#276461] peer" placeholder=" " required />
+        <label for="extra_info" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#276461] peer-focus:dark:text-[#276461] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Extra information</label>
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#276461] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    </form>
 </body>
 </html>
