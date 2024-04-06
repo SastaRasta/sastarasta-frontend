@@ -1,7 +1,5 @@
 const data = window.location.href.split("#")[1];
-console.log(data) 
-
-
+// console.log(data) 
 
 function setCookie(name,value,days) {
     var expires = "";
@@ -23,11 +21,16 @@ function getCookie(name) {
     }
     return null;
 }
+
 function eraseCookie(name) {   
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
-const tempurl = new URL(`http://localhost${data}`)
+const tempurl = new URL(`http://localhost?${data}`)
 const params = tempurl.searchParams
 
-console.log(params)
+const accessCode = params.get("access_token")
+setCookie("access_token", accessCode, 1)
+
+console.log(window.location.origin)
+window.location.href = `${window.location.origin}/src/`
