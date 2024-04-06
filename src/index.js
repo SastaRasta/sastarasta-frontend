@@ -11,6 +11,28 @@ function getCookie(name) {
     return null;
 }
 
+if (getCookie("access_token")) {
+    document.getElementById("login").style.display = "none";
+    const loggedIn = document.getElementById("logged_in")
+    const loggedInAs = document.getElementById("logged_in_as")
+
+    loggedIn.style.display = "block";
+    loggedInAs.style.display = "block";
+    
+    fetch(`${remoteURL}/auth/details`, {
+        headers: {
+            'Authorization': 'Bearer ' + getCookie("access_token")
+        }
+    })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            loggedInAs.innerHTML = `Welcome, ${data.nickname}`
+            loggedIn.src = data.picture
+        })
+
+}
+
 const login = document.getElementById("login");
 login.addEventListener("click", (e) => {
     fetch(`${remoteURL}/auth/login`)
