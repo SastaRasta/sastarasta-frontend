@@ -1,6 +1,6 @@
-# SastaRasta.com Frontend Repository
+# [SastaRasta](https://sastarasta.pages.dev/) Frontend Repository
 
-Welcome to the frontend repository for SastaRasta.com! 
+Welcome to the frontend repository for SastaRasta! 
 This repository contains the code for the user interface of our innovative travel planning platform. 
 With the power of Tailwind CSS, we're creating a sleek, responsive, and user-friendly interface that will enhance the travel planning experience for our users.
 
