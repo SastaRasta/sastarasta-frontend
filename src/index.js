@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:5000"
+const remoteURL = "https://authrexapi.bharathshanmugam.dev"
 
 function getCookie(name) {
     var nameEQ = name + "=";
@@ -9,6 +9,28 @@ function getCookie(name) {
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
     return null;
+}
+
+if (getCookie("access_token")) {
+    document.getElementById("login").style.display = "none";
+    const loggedIn = document.getElementById("logged_in")
+    const loggedInAs = document.getElementById("logged_in_as")
+
+    loggedIn.style.display = "block";
+    loggedInAs.style.display = "block";
+    
+    fetch(`${remoteURL}/auth/details`, {
+        headers: {
+            'Authorization': 'Bearer ' + getCookie("access_token")
+        }
+    })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            loggedInAs.innerHTML = `Welcome, ${data.nickname}`
+            loggedIn.src = data.picture
+        })
+
 }
 
 const login = document.getElementById("login");
