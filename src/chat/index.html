@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat UI</title>
-    <!-- <style>
+    <style>
         html, body {
             height: 100%;
             margin: 0;
@@ -13,13 +14,13 @@
         .chat-container {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            height: 65%;
         }
         .chat-messages {
             flex-grow: 1;
             overflow-y: auto;
         }
-    </style> -->
+    </style>
 </head>
 
 <body class="bg-gray-100 flex-col justify-center items-center">
@@ -42,28 +43,19 @@
   </header>
     <div class="chat-container flex-col  bg-white p-4 rounded shadow-md w-full">
         <!-- Chat messages -->
-        <div class="chat-messages">
+        <div id="chat-messages" class="chat-messages">
             <!-- Sender message -->
-            <div class="flex mb-2">
-                <div class="bg-blue-100 text-gray-800 p-2 rounded ml-20">
-                    Hello! How can I help you?
-                </div>
-            </div>
-            <!-- Receiver message -->
             <div class="flex justify-end ">
                 <div class="bg-green-100 text-gray-800 p-2 rounded mr-20">
-                    Hi! I have some queries regarding your product.
-                </div>
-                <div class="flex-shrink-0 ml-2">
-                    <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/50" alt="Receiver">
+                  Hello! How can I help you?
                 </div>
             </div>
         </div>
         <!-- Chat input -->
         <div class="mt-4">
             <div class="flex">
-                <input type="text" placeholder="Type a message..." class="flex-grow rounded-l border border-gray-300 p-2 focus:outline-none font-poppins">
-                <button class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600 focus:outline-none">Send</button>
+                <input id="inp" type="text" placeholder="Type a message..." class="flex-grow rounded-l border border-gray-300 p-2 focus:outline-none font-poppins">
+                <button id="send" class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600 focus:outline-none">Send</button>
             </div>
         </div>
     </div>
